@@ -18,16 +18,26 @@
         android:fontFamily="cursive"
         android:textColor="@color/white"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textAlignment="center"/>
+        android:gravity="center_horizontal"/>
 
     <LinearLayout
         android:id="@+id/contact_info"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:orientation="vertical"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true">
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingBottom="8dp"
+            style="@style/card_text"
+            android:text="@string/address"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,7 +46,6 @@
             android:paddingBottom="8dp"
             android:text="@string/email"
             style="@style/card_text"
-            android:fontFamily="sans-serif-thin"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -44,9 +53,7 @@
             android:layout_weight="1"
             android:paddingTop="8dp"
             android:text="@string/number"
-            android:textColor="@color/white"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:fontFamily="sans-serif-thin"
+            style="@style/card_text"
             />
 
     </LinearLayout>

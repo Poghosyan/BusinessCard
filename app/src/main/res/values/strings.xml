@@ -3,4 +3,5 @@
     <string name="title">Professional Pug Book Club</string>
     <string name="email">Email: professionalPug@book.club</string>
     <string name="number">Phone Number: (101)2345678</string>
+    <string name="address">8669 FancyPug Blvd \n Pugville, CA 91223</string>
 </resources>
